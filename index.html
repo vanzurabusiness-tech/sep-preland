@@ -598,6 +598,11 @@
             // Show the continue button
             document.getElementById('continueBtn').classList.add('visible');
             
+            // Auto-scroll to Continue button
+            setTimeout(() => {
+                document.getElementById('continueBtn').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+            
             // Hide "different country" link
             document.getElementById('differentCountry').classList.add('hidden');
         }
